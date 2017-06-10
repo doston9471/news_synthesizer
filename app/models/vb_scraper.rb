@@ -14,18 +14,22 @@ class VbScraper
 
   def all_pages
     @num_pages = 2
+    @counter=0
     (1...@num_pages).each do |i|
       page_num = i
+      puts page_num
+      puts "________________________________"
       url = "http://www.vb.kg/?sort_by=date&search=&page=#{page_num}"
       page_by_number(url)
     end
   end
 
   def page_by_number(url)
-    article = Article.new
 
     doc = Nokogiri::HTML(open(url))
       doc.css('div.cat_content ul li').each do |link|
+
+        article = Article.new
 
         #Date published
         date_created = link.css("span.topic_time_create")
@@ -65,7 +69,8 @@ class VbScraper
           article.portal_source_id = PortalSource.where("name=?", "vb.kg").first.id
           article.save
           puts article
-          puts "SAVED"
+          @counter=@counter+1
+          puts "SAVED #{@counter}"
         end
 
       end
