@@ -1,4 +1,5 @@
 class Article < ApplicationRecord
-  searchkick
+  # searchkick
   belongs_to :portal_source
+  default_scope { order(created_at: :desc) }
 end

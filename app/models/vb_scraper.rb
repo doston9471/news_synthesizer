@@ -20,7 +20,9 @@ class VbScraper
       puts page_num
       puts "________________________________"
       url = "http://www.vb.kg/?sort_by=date&search=&page=#{page_num}"
-      page_by_number(url)
+
+      page_by_number(url) if page_by_number(url)==true
+
     end
   end
 
@@ -41,7 +43,7 @@ class VbScraper
         puts "Article title: #{article_title.text}"
         article.headline = article_title.text
 
-        if saved_or_not(article)==false
+        if saved_or_not(article)==true
           #Article head image
           article_img = link.css("img.img-resize")[0]
           article_img_src=nil
@@ -72,7 +74,8 @@ class VbScraper
           @counter=@counter+1
           puts "SAVED #{@counter}"
         else
-        puts "Article Exists: #{article.headline}"
+          puts "Article Exists: #{article.headline}"
+          return false
         end
 
       end
@@ -80,6 +83,8 @@ class VbScraper
 
    def saved_or_not(article)
      dbarticles = Article.where("headline=?", article.headline)
+     puts dbarticles
+     puts "RESULT"
      if dbarticles==nil
        return true
      end
