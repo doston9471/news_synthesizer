@@ -23,6 +23,7 @@ class KloopScraper
 		end
 	end
 
+
 	def page_by_number(url)
 		doc = Nokogiri::HTML(open(url))
 			doc.css(".item-details").each do |link|
@@ -49,9 +50,9 @@ class KloopScraper
 					article_link = link.css('h3 a')[0]['href']
 					puts "Article Link: #{article_link}"
 
-					article_doc = Nokogiri::HTML(open(article_link))
+					@article_doc = Nokogiri::HTML(open(article_link))
 					article.textonly=""
-					article_doc.css("div.td-post-content").each do |topic|
+					@article_doc.css("div.td-post-content").each do |topic|
 						topic.css("p").each do |topic_text|
 							topic_text.content
 							article.textonly = article.textonly+topic_text.content
