@@ -15,5 +15,8 @@ Rails.application.routes.draw do
 
   root "portal_sources#index"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bed0c154146ce442385aef0e9b8138b9ab465953
 end

@@ -9,7 +9,6 @@ class ScraperController < ApplicationController
   end
 
   def vb
-
     #Scrapes all pages
     @scraper= VbScraper.instance.all_pages
 

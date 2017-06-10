@@ -15,7 +15,11 @@ ActiveRecord::Schema.define(version: 20170610132147) do
   create_table "articles", force: :cascade do |t|
     t.string   "headline"
     t.text     "textonly"
+<<<<<<< HEAD
     t.string   "date_published"
+=======
+    t.date     "date_published"
+>>>>>>> bed0c154146ce442385aef0e9b8138b9ab465953
     t.text     "textorig"
     t.integer  "portal_source_id"
     t.datetime "created_at",       null: false
