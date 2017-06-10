@@ -1,0 +1,18 @@
+<%= simple_form_for(portal_source) do |f| %>
+  <% if portal_source.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(portal_source.errors.count, "error") %> prohibited this portal_source from being saved:</h2>
+
+      <ul>
+      <% portal_source.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.input :name %>
+  <%= f.input :size %>
+  <%= f.button :submit %>
+
+<% end %>
