@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Headline:</strong>
+  <%= @article.headline %>
+</p>
+
+<p>
+  <strong>Textonly:</strong>
+  <%= @article.textonly %>
+</p>
+
+<p>
+  <strong>Date published:</strong>
+  <%= @article.date_published %>
+</p>
+
+<p>
+  <strong>Textorig:</strong>
+  <%= @article.textorig %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170610095419) do
+ActiveRecord::Schema.define(version: 20170610100921) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "headline"
+    t.text     "textonly"
+    t.date     "datepublished"
+    t.text     "textorig"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "portal_sources", force: :cascade do |t|
     t.string   "name"

@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+portals = ["kloop.kg", "vb.kg", "knews.kg"]
+size=25
+portals.each do |portal|
+  port = PortalSource.new
+  port.name=portal
+  port.size=size
+  port.save
+end
