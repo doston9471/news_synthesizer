@@ -1,8 +1,6 @@
 require 'yandex_speech'
 class Yandex_Synthezator
 
- # attr_accessor: speaker
-
   def initialize_yandex()
     key = File.open('secret key/key').readline.strip
     @speaker = YandexSpeechApi::Speaker.init
@@ -12,17 +10,17 @@ class Yandex_Synthezator
     @speaker.speed    = 1
     @speaker.emotion  = 'good'
   end
-  # speaker = YandexSpeechApi::Speaker.init key: key, language: 'russian'
-  # speaker.save_to_file "Не будите спящего кота."
 
   def save_text_as_audio(text)
     # TODO check from database
+
     file_name = Time.now
     puts file_name.to_i
+
     # file_dir = '~/desktop/news/'+"#{file_name.to_i}.mp3"
+
     file_dir = '/Desktop/news/'+"test.mp3"
     filename ="#{file_name.to_i}"
-
 
     if !File.exists? file_dir
       File.open(filename, "w+") do |file|

@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'scraper/vb'
+
+  get 'scraper/knews'
+
+  get 'scraper/kloop'
+
   resources :articles
   resources :portal_sources
 

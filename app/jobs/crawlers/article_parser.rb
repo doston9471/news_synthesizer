@@ -1,6 +1,4 @@
 
-require 'yandex_speech'
-
 def parse_article(article_url)
 
   puts "I got #{article_url}"
