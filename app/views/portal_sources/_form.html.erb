@@ -1,4 +1,4 @@
-<%= form_for(portal_source) do |f| %>
+<%= simple_form_for(portal_source) do |f| %>
   <% if portal_source.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(portal_source.errors.count, "error") %> prohibited this portal_source from being saved:</h2>
@@ -11,17 +11,8 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
+  <%= f.input :name %>
+  <%= f.input :size %>
+  <%= f.button :submit %>
 
-  <div class="field">
-    <%= f.label :size %>
-    <%= f.number_field :size %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

@@ -10,15 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170610100921) do
+ActiveRecord::Schema.define(version: 20170610103605) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "headline"
     t.text     "textonly"
-    t.date     "datepublished"
+    t.date     "date_published"
     t.text     "textorig"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.integer  "portal_source_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["portal_source_id"], name: "index_articles_on_portal_source_id"
   end
 
   create_table "portal_sources", force: :cascade do |t|

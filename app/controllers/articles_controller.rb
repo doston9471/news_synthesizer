@@ -7,6 +7,22 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
+  def kloop
+    @articles=Article.where("portal_source_id=?", 1)
+
+    render 'index'
+  end
+
+  def vb
+    @articles=Article.where("portal_source_id=?", 2)
+    render 'index'
+  end
+
+  def knews
+    @articles=Article.where("portal_source_id=?", 3)
+    render 'index'
+  end
+
   # GET /articles/1
   # GET /articles/1.json
   def show
@@ -69,6 +85,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:headline, :textonly, :date_published, :textorig)
+      params.require(:article).permit(:headline, :textonly, :date_published, :textorig, :portal_source_id)
     end
 end

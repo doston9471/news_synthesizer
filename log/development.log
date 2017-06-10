@@ -66,3 +66,1092 @@ Processing by PortalSourcesController#index as HTML
 Completed 200 OK in 1612ms (Views: 1608.5ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-10 06:16:23 -0400
+Processing by PortalSourcesController#index as HTML
+  Rendering portal_sources/index.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.6ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered portal_sources/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portal_sources/new" for 127.0.0.1 at 2017-06-10 06:16:48 -0400
+Processing by PortalSourcesController#new as HTML
+  Rendering portal_sources/new.html.erb within layouts/application
+  Rendered portal_sources/_form.html.erb (280.1ms)
+  Rendered portal_sources/new.html.erb within layouts/application (281.5ms)
+Completed 200 OK in 309ms (Views: 307.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portal_sources/new" for 127.0.0.1 at 2017-06-10 06:17:29 -0400
+Processing by PortalSourcesController#new as HTML
+  Rendering portal_sources/new.html.erb within layouts/application
+  Rendered portal_sources/_form.html.erb (241.5ms)
+  Rendered portal_sources/new.html.erb within layouts/application (242.8ms)
+Completed 200 OK in 264ms (Views: 263.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portal_sources/new" for 127.0.0.1 at 2017-06-10 06:20:52 -0400
+Processing by PortalSourcesController#new as HTML
+  Rendering portal_sources/new.html.erb within layouts/application
+  Rendered portal_sources/_form.html.erb (4.8ms)
+  Rendered portal_sources/new.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial portal_sources/__navbar, application/__navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/admin/Desktop/news/app/views"
+):
+    10: 
+    11:   <body>
+    12: 
+    13:     <%= render '_navbar' %>
+    14: 
+    15:     <%= yield %>
+    16: 
+  
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2925501535219316437_69864862310460'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.6ms)
+Started GET "/portal_sources/new" for 127.0.0.1 at 2017-06-10 06:21:05 -0400
+Processing by PortalSourcesController#new as HTML
+  Rendering portal_sources/new.html.erb within layouts/application
+  Rendered portal_sources/_form.html.erb (12.6ms)
+  Rendered portal_sources/new.html.erb within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial portal_sources/_navbar, application/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/admin/Desktop/news/app/views"
+):
+    10: 
+    11:   <body>
+    12: 
+    13:     <%= render 'navbar' %>
+    14: 
+    15:     <%= yield %>
+    16: 
+  
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2925501535219316437_47183610120200'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.1ms)
+Started GET "/portal_sources/new" for 127.0.0.1 at 2017-06-10 06:21:11 -0400
+Processing by PortalSourcesController#new as HTML
+  Rendering portal_sources/new.html.erb within layouts/application
+  Rendered portal_sources/_form.html.erb (4.9ms)
+  Rendered portal_sources/new.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portal_sources/new" for 127.0.0.1 at 2017-06-10 06:23:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PortalSourcesController#new as HTML
+  Rendering portal_sources/new.html.erb within layouts/application
+  Rendered portal_sources/_form.html.erb (40.3ms)
+  Rendered portal_sources/new.html.erb within layouts/application (41.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 4145ms (Views: 4130.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portal_sources/new" for 127.0.0.1 at 2017-06-10 06:23:12 -0400
+Processing by PortalSourcesController#new as HTML
+  Rendering portal_sources/new.html.erb within layouts/application
+  Rendered portal_sources/_form.html.erb (6.7ms)
+  Rendered portal_sources/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portal_sources/new" for 127.0.0.1 at 2017-06-10 06:23:13 -0400
+Processing by PortalSourcesController#new as HTML
+  Rendering portal_sources/new.html.erb within layouts/application
+  Rendered portal_sources/_form.html.erb (6.2ms)
+  Rendered portal_sources/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portal_sources/new" for 127.0.0.1 at 2017-06-10 06:23:14 -0400
+Processing by PortalSourcesController#new as HTML
+  Rendering portal_sources/new.html.erb within layouts/application
+  Rendered portal_sources/_form.html.erb (8.0ms)
+  Rendered portal_sources/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portal_sources" for 127.0.0.1 at 2017-06-10 06:23:19 -0400
+Processing by PortalSourcesController#index as HTML
+  Rendering portal_sources/index.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.4ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered portal_sources/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticles (20170610102406)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" varchar, "textonly" text, "date_published" date, "textorig" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticles (20170610102406)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" varchar, "textonly" text, "date_published" date, "textorig" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticles (20170610102406)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" varchar, "textonly" text, "date_published" date, "textorig" text, "portal_source_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_articles_on_portal_source_id" ON "articles" ("portal_source_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170610102406"]]
+  [1m[35m (184.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_articles_on_portal_source_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_articles_on_portal_source_id' AND type='index'
+[0m
+Started GET "/portal_sources" for 127.0.0.1 at 2017-06-10 06:25:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PortalSourcesController#index as HTML
+  Rendering portal_sources/index.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered portal_sources/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 319ms (Views: 309.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-06-10 06:26:07 -0400
+Processing by Rails::InfoController#routes as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (5.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-06-10 06:26:18 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:26:19 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (123.9ms)
+  Rendered articles/new.html.erb within layouts/application (126.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 184ms (Views: 176.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-06-10 06:26:44 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZhkQa2a6GVzajd89EPyb0vU/m6wOotuMhmz+v01gbTNQcMJrnfVHBcl7BMkMUh+v9K1K6a1wPLUDQ8R4ONbnrQ==", "article"=>{"headline"=>"I am test", "textonly"=>"This id saefasefefe", "date_published(1i)"=>"2017", "date_published(2i)"=>"6", "date_published(3i)"=>"10", "textorig"=>"aasxaxadwwdwdwdwdwwdw"}, "commit"=>"Create Article"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (41.1ms)[0m  [1m[32mINSERT INTO "articles" ("headline", "textonly", "date_published", "textorig", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["headline", "I am test"], ["textonly", "This id saefasefefe"], ["date_published", "2017-06-10"], ["textorig", "aasxaxadwwdwdwdwdwwdw"], ["created_at", "2017-06-10 10:26:44.509473"], ["updated_at", "2017-06-10 10:26:44.509473"]]
+  [1m[35m (160.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 209ms (ActiveRecord: 202.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-06-10 06:26:44 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 50.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-06-10 06:26:49 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:26:53 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (12.5ms)
+  Rendered articles/new.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:27:27 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (90.4ms)
+  Rendered articles/new.html.erb within layouts/application (91.3ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `collection' for #<SimpleForm::FormBuilder:0x007f9079f39f88>
+Did you mean?  collection_select):
+    3: 
+    4:   <div class="form-inputs">
+    5: 
+    6:     <%= f.collection :portal_source %>
+    7: 
+    8:     <%= f.input :headline %>
+    9:     <%= f.input :textonly %>
+  
+app/views/articles/_form.html.erb:6:in `block in _app_views_articles__form_html_erb__1443928959698934299_70129248928960'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__1443928959698934299_70129248928960'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___4220346623194706445_47375375408440'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.9ms)
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:28:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (47.1ms)
+  Rendered articles/new.html.erb within layouts/application (48.7ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `portal_source' for #<Article:0x005588e76b0858>
+Did you mean?  portal_source_id
+               portal_source_id?
+               portal_source_id=):
+    3: 
+    4:   <div class="form-inputs">
+    5: 
+    6:     <%= f.input :portal_source,  collection: @portal_sources %>
+    7: 
+    8:     <%= f.input :headline %>
+    9:     <%= f.input :textonly %>
+  
+app/views/articles/_form.html.erb:6:in `block in _app_views_articles__form_html_erb__2869121999396669905_47023242616360'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__2869121999396669905_47023242616360'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___3048472277715857604_47023242822060'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.4ms)
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:29:01 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (29.4ms)
+  Rendered articles/new.html.erb within layouts/application (30.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 243ms (Views: 241.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:29:20 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.2ms)
+  Rendered articles/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 4..6)):
+    3: 
+    4:   <div class="form-inputs">
+    5: 
+    6:     <%= f.collection_select :portal_source_id%>
+    7: 
+    8:     <%= f.input :headline %>
+    9:     <%= f.input :textonly %>
+  
+app/views/articles/_form.html.erb:6:in `block in _app_views_articles__form_html_erb__2869121999396669905_70023749585600'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__2869121999396669905_70023749585600'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___3048472277715857604_70023749154400'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:30:32 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.4ms)
+  Rendered articles/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 4..6)):
+    3: 
+    4:   <div class="form-inputs">
+    5: 
+    6:     <%= f.collection_select :portal_source_id%>
+    7: 
+    8:     <%= f.input :headline %>
+    9:     <%= f.input :textonly %>
+  
+app/views/articles/_form.html.erb:6:in `block in _app_views_articles__form_html_erb__2869121999396669905_70023749368760'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__2869121999396669905_70023749368760'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___3048472277715857604_70023749584300'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.3ms)
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:32:03 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Association :portal_source not found):
+    3: 
+    4:   <div class="form-inputs">
+    5: 
+    6:     <%= f.association :portal_source %>
+    7:     <%= f.input :headline %>
+    8:     <%= f.input :textonly %>
+    9:     <%= f.input :date_published %>
+  
+app/views/articles/_form.html.erb:6:in `block in _app_views_articles__form_html_erb__2869121999396669905_70023752974280'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__2869121999396669905_70023752974280'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___3048472277715857604_70023753287760'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.8ms)
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:33:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (27.2ms)
+  Rendered articles/new.html.erb within layouts/application (28.7ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (Association :portal_source not found):
+    3: 
+    4:   <div class="form-inputs">
+    5: 
+    6:     <%= f.association :portal_source %>
+    7:     <%= f.input :headline %>
+    8:     <%= f.input :textonly %>
+    9:     <%= f.input :date_published %>
+  
+app/views/articles/_form.html.erb:6:in `block in _app_views_articles__form_html_erb__1458345102534017747_47439908764180'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__1458345102534017747_47439908764180'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___4253504550901794140_47439908928400'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.7ms)
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:33:17 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Association :portal_source not found):
+    3: 
+    4:   <div class="form-inputs">
+    5: 
+    6:     <%= f.association :portal_source %>
+    7:     <%= f.input :headline %>
+    8:     <%= f.input :textonly %>
+    9:     <%= f.input :date_published %>
+  
+app/views/articles/_form.html.erb:6:in `block in _app_views_articles__form_html_erb__1458345102534017747_47439905593780'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__1458345102534017747_47439905593780'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___4253504550901794140_47439905432220'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.9ms)
+Started PUT "/__web_console/repl_sessions/6da2a024f57b81b41dd5699be0bb3478" for 127.0.0.1 at 2017-06-10 06:33:30 -0400
+Started PUT "/__web_console/repl_sessions/6da2a024f57b81b41dd5699be0bb3478" for 127.0.0.1 at 2017-06-10 06:33:33 -0400
+Started PUT "/__web_console/repl_sessions/6da2a024f57b81b41dd5699be0bb3478" for 127.0.0.1 at 2017-06-10 06:33:33 -0400
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:34:42 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Association :portal_source not found):
+    3: 
+    4:   <div class="form-inputs">
+    5: 
+    6:     <%= f.association :portal_source %>
+    7:     <%= f.input :headline %>
+    8:     <%= f.input :textonly %>
+    9:     <%= f.input :date_published %>
+  
+app/views/articles/_form.html.erb:6:in `block in _app_views_articles__form_html_erb__1458345102534017747_47439910898100'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__1458345102534017747_47439910898100'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___4253504550901794140_47439884661200'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:34:52 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Association :portal_source_id not found):
+    3: 
+    4:   <div class="form-inputs">
+    5: 
+    6:     <%= f.association :portal_source_id %>
+    7:     <%= f.input :headline %>
+    8:     <%= f.input :textonly %>
+    9:     <%= f.input :date_published %>
+  
+app/views/articles/_form.html.erb:6:in `block in _app_views_articles__form_html_erb__1458345102534017747_47439910418840'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__1458345102534017747_47439910418840'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___4253504550901794140_47439910459820'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticles (20170610103605)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" varchar, "textonly" text, "date_published" date, "textorig" text, "portal_source_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticles (20170610103605)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" varchar, "textonly" text, "date_published" date, "textorig" text, "portal_source_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_articles_on_portal_source_id" ON "articles" ("portal_source_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170610103605"]]
+  [1m[35m (128.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_articles_on_portal_source_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_articles_on_portal_source_id' AND type='index'
+[0m
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:37:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (160.6ms)
+  Rendered articles/new.html.erb within layouts/application (162.2ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 479ms (Views: 460.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-06-10 06:37:32 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AawkyR4sWSn2UI+e5FMuPlloTymY2VYd2c9a4kjbYtkpA6O98pC3DH/RvpckfsdsKwszxeariHdI8pctXdTnxQ==", "article"=>{"headline"=>"I am test", "textonly"=>"text only", "date_published(1i)"=>"2017", "date_published(2i)"=>"6", "date_published(3i)"=>"10", "textorig"=>"sadfasdf", "portal_source_id"=>"2"}, "commit"=>"Create Article"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("headline", "textonly", "date_published", "textorig", "portal_source_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headline", "I am test"], ["textonly", "text only"], ["date_published", "2017-06-10"], ["textorig", "sadfasdf"], ["portal_source_id", 2], ["created_at", "2017-06-10 10:37:32.302082"], ["updated_at", "2017-06-10 10:37:32.302082"]]
+  [1m[35m (149.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 228ms (ActiveRecord: 150.0ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-06-10 06:37:32 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.1ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered articles/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 57.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-06-10 06:37:34 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:37:44 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.4ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (16.2ms)
+  Rendered articles/new.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 62.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:37:57 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.5ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (15.3ms)
+  Rendered articles/new.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:38:24 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (10.9ms)
+  Rendered articles/new.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:39:03 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.3ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (13.2ms)
+  Rendered articles/new.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:39:07 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (11.1ms)
+  Rendered articles/new.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-06-10 06:40:20 -0400
+Processing by Rails::InfoController#routes as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (4.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-06-10 06:42:27 -0400
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.3ms)
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-06-10 06:42:36 -0400
+Processing by Rails::InfoController#routes as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (3.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:43:15 -0400
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.3ms)
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-06-10 06:43:16 -0400
+Processing by Rails::InfoController#routes as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (4.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:43:37 -0400
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.6ms)
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:43:40 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.1ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (17.3ms)
+  Rendered articles/new.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 61.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 06:43:43 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (12.4ms)
+  Rendered articles/new.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-06-10 06:43:49 -0400
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.5ms)
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-06-10 07:09:08 -0400
+Processing by Rails::InfoController#routes as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [18 times] (4.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-06-10 07:09:44 -0400
+Processing by Rails::InfoController#routes as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (6.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:10:45 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.1ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (21.2ms)
+  Rendered articles/new.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 73ms (Views: 60.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kloop" for 127.0.0.1 at 2017-06-10 07:10:47 -0400
+Processing by ArticlesController#kloop as HTML
+Completed 406 Not Acceptable in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (ArticlesController#kloop is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.3) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.3) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.3) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.3) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.3) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.3) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.3) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.3) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.3) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.3) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.3) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.3) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.3) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.7ms)
+Started GET "/kloop" for 127.0.0.1 at 2017-06-10 07:11:14 -0400
+Processing by ArticlesController#kloop as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE (portal_source_id=1)[0m
+  Rendered articles/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 48ms (Views: 43.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kloop" for 127.0.0.1 at 2017-06-10 07:11:30 -0400
+Processing by ArticlesController#kloop as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE (portal_source_id=1)[0m
+  Rendered articles/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 47.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:11:36 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (18.5ms)
+  Rendered articles/new.html.erb within layouts/application (19.5ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 75ms (Views: 68.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-06-10 07:11:40 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yVbXgPkDy0f4RxgiBfofboFvO8YumLFGVAmwX8oCG03h+VD0Fb8lYnHGKSvF1/Y88wxHKlDqbyzFNH2Q3w2eUQ==", "article"=>{"headline"=>"adf", "textonly"=>"efe", "date_published(1i)"=>"2017", "date_published(2i)"=>"6", "date_published(3i)"=>"10", "textorig"=>"adsf", "portal_source_id"=>"1"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("headline", "textonly", "date_published", "textorig", "portal_source_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["headline", "adf"], ["textonly", "efe"], ["date_published", "2017-06-10"], ["textorig", "adsf"], ["portal_source_id", 1], ["created_at", "2017-06-10 11:11:40.537678"], ["updated_at", "2017-06-10 11:11:40.537678"]]
+  [1m[35m (262.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 280ms (ActiveRecord: 262.7ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2017-06-10 07:11:40 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.1ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-06-10 07:11:42 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mPortalSource Load (0.1ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPortalSource Load (0.1ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/knews" for 127.0.0.1 at 2017-06-10 07:11:48 -0400
+Processing by ArticlesController#knews as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE (portal_source_id=3)[0m
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vb" for 127.0.0.1 at 2017-06-10 07:11:49 -0400
+Processing by ArticlesController#vb as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE (portal_source_id=2)[0m
+  [1m[36mPortalSource Load (0.1ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kloop" for 127.0.0.1 at 2017-06-10 07:11:50 -0400
+Processing by ArticlesController#kloop as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE (portal_source_id=1)[0m
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:12:16 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.1ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (15.2ms)
+  Rendered articles/new.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 54.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:12:21 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (12.2ms)
+  Rendered articles/new.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:12:24 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.3ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (11.9ms)
+  Rendered articles/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:13:20 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (10.8ms)
+  Rendered articles/new.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:13:24 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.3ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (12.0ms)
+  Rendered articles/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:13:32 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.4ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (15.4ms)
+  Rendered articles/new.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:14:17 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.5ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (13.7ms)
+  Rendered articles/new.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:14:29 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (11.6ms)
+  Rendered articles/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:14:40 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.3ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (11.0ms)
+  Rendered articles/new.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:14:41 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (12.9ms)
+  Rendered articles/new.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-06-10 07:14:42 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT "portal_sources".* FROM "portal_sources"[0m
+  Rendered articles/_form.html.erb (13.9ms)
+  Rendered articles/new.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/kloop" for 127.0.0.1 at 2017-06-10 07:14:52 -0400
+Processing by ArticlesController#kloop as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE (portal_source_id=1)[0m
+  [1m[36mPortalSource Load (0.2ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kloop" for 127.0.0.1 at 2017-06-10 07:14:55 -0400
+Processing by ArticlesController#kloop as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE (portal_source_id=1)[0m
+  [1m[36mPortalSource Load (0.1ms)[0m  [1m[34mSELECT  "portal_sources".* FROM "portal_sources" WHERE "portal_sources"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.3ms)
+
+
