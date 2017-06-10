@@ -71,6 +71,8 @@ class VbScraper
           puts article
           @counter=@counter+1
           puts "SAVED #{@counter}"
+        else
+        puts "Article Exists: #{article.headline}"
         end
 
       end

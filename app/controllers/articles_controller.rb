@@ -4,22 +4,21 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    @articles = Article.paginate(:page => params[:page], :per_page => 30)
   end
 
   def kloop
-    @articles=Article.where("portal_source_id=?", 1)
-
+    @articles=Article.where("portal_source_id=?", 1).paginate(:page => params[:page], :per_page => 30)
     render 'index'
   end
 
   def vb
-    @articles=Article.where("portal_source_id=?", 2)
+    @articles=Article.where("portal_source_id=?", 2).paginate(:page => params[:page], :per_page => 30)
     render 'index'
   end
 
   def knews
-    @articles=Article.where("portal_source_id=?", 3)
+    @articles=Article.where("portal_source_id=?", 3).paginate(:page => params[:page], :per_page => 30)
     render 'index'
   end
 

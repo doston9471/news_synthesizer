@@ -5,8 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+gem 'searchkick'
+gem 'will_paginate'
 gem 'nokogiri'
-# gem 'open-uri'
+gem 'will_paginate-bootstrap'
 
 gem 'yandex_speech_api'
 
