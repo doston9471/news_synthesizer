@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'nokogiri'
+# gem 'open-uri'
+
+gem 'yandex_speech_api'
 
 gem 'simple_form'
 

@@ -1,4 +1,3 @@
-require 'yandex_speech'
 class Yandex_Synthezator
 
   def initialize_yandex()
