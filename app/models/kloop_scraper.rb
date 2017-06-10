@@ -37,7 +37,7 @@ class KloopScraper
 				puts "Article title: #{article_title.text}"
 				article.headline = article_title.text
 
-				if saved_or_not(article) == false
+				if saved_or_not(article) == true
 					#Article head image
 					article_img = link.css("img.img-resize")[0]
 					article_img_src = nil
