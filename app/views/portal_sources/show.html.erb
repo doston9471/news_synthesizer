@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @portal_source.name %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @portal_source.size %>
+</p>
+
+<%= link_to 'Edit', edit_portal_source_path(@portal_source) %> |
+<%= link_to 'Back', portal_sources_path %>

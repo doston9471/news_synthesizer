@@ -1,0 +1,2 @@
+class PortalSource < ApplicationRecord
+end
