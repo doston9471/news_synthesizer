@@ -8,39 +8,15 @@ class Article < ApplicationRecord
 
 
   def setup_yandex
+    
     if self.audio==nil
-
       self.audio="https://tts.voicetech.yandex.net/generate?text="+self.textonly+
       "&format=mp3&lang=ru-RU&speaker=zahar&emotion=good&key=bc83ff34-e8a1-4e6d-8fe7-42ce3beca9f1"
       puts "audio URL"
       puts self.audio
-
-
       self.save
     end
 
-    # load('yandex_synthezator.rb')
-    # value = %x( ruby yandex_synthezator.rb )
-    #
-    # yandex_speaker = Yandex_Synthezator.new
-    # yandex_speaker.initialize_yandex()
-    # yandex_speaker.save_text_as_audio("Учёные обозначили
-    # ряд вопросов интеграционного взаимодействия в формате ЕАЭС.
-    # Как отметил в своем докладе главный научный сотрудник института
-    # экономики НАН КР, доктор экономических наук Калиль Джумабаев,
-    #  необходимо усилить потенциал внешних трудовых мигрантов из Кыргызстана.")
-
-    # key = File.open('secret key/key').readline.strip
-    # puts "Yandex KEY: #{key}"
-    # @speaker = YandexSpeechApi::Speaker.init
-    # @speaker.key      = key
-    # # speaker.voice    = 'Alyss'
-    # @speaker.language = 'russian'
-    # @speaker.speed    = 1
-    # @speaker.emotion  = 'good'
-    # #
-    # @speaker.save_to_file 'i am test text'
-    # save_text_as_audio("нтеграционного взаимо")
   end
 
   def save_text_as_audio(text)

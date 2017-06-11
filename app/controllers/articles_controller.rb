@@ -21,14 +21,18 @@ class ArticlesController < ApplicationController
   def vb
     @articles=Article.where("portal_source_id=?", 2).paginate(:page => params[:page], :per_page => 10)
 
-    audiourl =@articles.first.audio
-    audiourl =  URI.encode(audiourl)
 
     @articles.each do |article|
 
-      puts article.audiourl
+      audiourl =article.audio
+      audiourl =  URI.encode(audiourl)
 
-      if article.audiourl==nil || article.audiourl.length<1
+      puts article.audiourl
+      if article.audiourl==nil
+
+        puts article.audiourl
+        puts "inside"
+
         file_name = Time.now
         filename ="#{file_name.to_i}.mp3"
         save_path = Rails.root.join('public/audios', filename)
@@ -37,6 +41,9 @@ class ArticlesController < ApplicationController
         end
 
         article.audiourl='audios/'+filename
+        article.save
+        # article.attribute_update({audiourl: })
+
         puts article.headline
         puts filename
         puts "SAVED"
