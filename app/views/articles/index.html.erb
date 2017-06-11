@@ -1,4 +1,17 @@
 <p id="notice"><%= notice %></p>
+<div class="search-form">
+
+  <%= form_tag articles_path, :method => :get do %>
+  <div class="input-group" style="float:left;">
+
+    <%= text_field_tag :search, params[:search], id: :textonly %>
+
+    <%= submit_tag "Search", :name => nil %>
+
+  </div>
+  <% end %>
+
+</div>
 
 <h1>Articles</h1>
 
@@ -20,7 +33,7 @@
         <td><%= article.headline %></td>
         <td><%= article.textonly %></td>
         <td><%= article.date_published %></td>
-        <td><%= article.textorig %></td>
+        
         <td><%= article.portal_source %></td>
         <td><%= link_to 'Show', article %></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>
@@ -34,3 +47,6 @@
 <br>
 
 <%= link_to 'New Article', new_article_path %>
+<% @articles.each do |a| %>
+  <%= a.textorig %>
+<% end %>

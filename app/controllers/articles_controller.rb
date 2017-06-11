@@ -4,21 +4,24 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.paginate(:page => params[:page], :per_page => 30)
+    keyword = params[:search]
+    keyword = '*' if keyword==nil || keyword==''
+    @articles = Article.search keyword,fields: [:headline,:textonly],page: params[:page], per_page: 10
+    #@articles = Article.paginate(:page => params[:page], :per_page => 10)
   end
 
   def kloop
-    @articles=Article.where("portal_source_id=?", 1).paginate(:page => params[:page], :per_page => 30)
+    @articles=Article.where("portal_source_id=?", 1).paginate(:page => params[:page], :per_page => 10)
     render 'index'
   end
 
   def vb
-    @articles=Article.where("portal_source_id=?", 2).paginate(:page => params[:page], :per_page => 30)
+    @articles=Article.where("portal_source_id=?", 2).paginate(:page => params[:page], :per_page => 10)
     render 'index'
   end
 
   def knews
-    @articles=Article.where("portal_source_id=?", 3).paginate(:page => params[:page], :per_page => 30)
+    @articles=Article.where("portal_source_id=?", 3).paginate(:page => params[:page], :per_page => 10)
     render 'index'
   end
 

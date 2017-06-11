@@ -5,7 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+#Search
+#gem 'elasticksearch-rails'
+#gem 'elasticksearch-model'
+#
 gem 'searchkick'
 gem 'will_paginate'
 gem 'nokogiri'

@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-  # searchkick
+  searchkick callbacks: :async
   belongs_to :portal_source
-  default_scope { order(created_at: :desc) }
+  #default_scope { order(created_at: :desc) }
 end

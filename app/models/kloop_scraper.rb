@@ -12,7 +12,7 @@ class KloopScraper
 	end
 
 	def all_pages
-		@num_pages = 2
+		@num_pages = 5
 		@counter = 0
 		(1...@num_pages).each do |i|
 			page_num = i
@@ -37,7 +37,7 @@ class KloopScraper
 				puts "Article title: #{article_title.text}"
 				article.headline = article_title.text
 
-				if saved_or_not(article) == true
+				if saved_or_not(article) == false
 					#Article head image
 					article_img = link.css("img.img-resize")[0]
 					article_img_src = nil
@@ -51,6 +51,7 @@ class KloopScraper
 					puts "Article Link: #{article_link}"
 
 					@article_doc = Nokogiri::HTML(open(article_link))
+					article.textorig = @article_doc.css('div.td-post-content').text
 					article.textonly=""
 					@article_doc.css("div.td-post-content").each do |topic|
 						topic.css("p").each do |topic_text|
