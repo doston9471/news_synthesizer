@@ -1,58 +1,56 @@
-<p id="notice"><%= notice %></p>
-<div class="search-form">
+<div class="container-fluid" >
 
-  <%= form_tag articles_path, :method => :get do %>
-  <div class="input-group" style="float:left;">
+<div class="container">
+  <div class="row text-center">
 
-    <%= text_field_tag :search, params[:search], id: :textonly %>
-
-    <%= submit_tag "Search", :name => nil %>
-
+    <div class="search-form" style="margin-left: 35%;">
+      <%= form_tag articles_path, :method => :get do %>
+      <div class="input-group" style="float:left;">
+        <%= text_field_tag :search, params[:search], id: :textonly %>
+        <%= submit_tag "Поиск", :name => nil %>
+      </div>
+      <% end %>
+    </div>
   </div>
-  <% end %>
-
 </div>
 
-<h1>Articles</h1>
+<div class="container">
+  <div class="row">
 
-<table>
-  <thead>
-    <tr>
-      <th>Headline</th>
-      <th>Textonly</th>
-      <th>Date published</th>
-      <th>Textorig</th>
-      <th>Portal source</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
     <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.audiourl %></td>
-        <td><%= article.headline %></td>
-        <td><%= article.textonly %></td>
-        <td><%= article.date_published %></td>
-        <td><%= article.portal_source %></td>
-        <td><%= article.audio %></td>
-        <td>
-            <audio controls class="audio-play">
-             <source src="<%= article.audiourl %>" type="audio/mpeg">
-             <source src="<%= article.audiourl %>" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-        </td>
+    <div class="col-md-7 col-md-offset-1">
+          <h3><%= article.headline %></h3>
+          <p><%= article.textonly.truncate([article.textonly.length.to_i, "250".to_i].min) %></p>
+          <p>
+            <a href="#spoiler-<%= article.id %>" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Подробнее <i class="fa fa-arrow-right"></i></a>
+            <div id="spoiler-<%= article.id %>" class="collapse">
+              <p>
+                <%= article.textonly %>
+              </p>
+              <td><%= article.date_published %></td>
+              <td><%= link_to 'Show', article %></td>
+              <td><%= link_to 'Edit', edit_article_path(article) %></td>
+              <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+           </div>
+          </p>
 
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
+    </div>
+    <div class="col-md-3">
+      <div>
+          <audio controls class="audio-play">
+           <source src="<%= article.audiourl %>" type="audio/mpeg">
+           <source src="<%= article.audiourl %>" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+      </div>
+    </div>
+
     <% end %>
-  </tbody>
-</table>
-<%= will_paginate @articles , renderer: BootstrapPagination::Rails%>
+  </div>
 
-<br>
+  <%= link_to 'New Article', new_article_path %>
+  </div>
+  <%= will_paginate @articles , renderer: BootstrapPagination::Rails%>
 
-<%= link_to 'New Article', new_article_path %>
+</div>

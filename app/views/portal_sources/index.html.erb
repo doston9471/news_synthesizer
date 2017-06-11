@@ -1,29 +1,98 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div id="carousel" class="carousel slide con-car">
+     <!--Индикаторы слайдов-->
+     <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+     </ol>
+     <!--Слайды-->
+     <div class="carousel-inner" id="mycarousel">
 
-<h1>Portal Sources</h1>
+        <div class="item active">
+          <%= image_tag("gotoviy.png", class: "carousel_slider img img-responsive") %>
+        </div>
+        <div class="item">
+             <%= image_tag("header.jpg", class: "carousel_slider img img-responsive") %>
+        </div>
+        <div class="item">
+          <%= image_tag("header.jpg", class: "carousel_slider img img-responsive") %>
+        </div>
+     </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Size</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+     <!--Стрелки переключения слайдов-->
+     <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+     </a>
+     <a href="#carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+     </a>
+  </div>
+</div>
 
-  <tbody>
-    <% @portal_sources.each do |portal_source| %>
-      <tr>
-        <td><%= portal_source.name %></td>
-        <td><%= portal_source.size %></td>
-        <td><%= link_to 'Show', portal_source %></td>
-        <td><%= link_to 'Edit', edit_portal_source_path(portal_source) %></td>
-        <td><%= link_to 'Destroy', portal_source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <div class="container">
+   <h1 style="text-align: center;">Команда Эверест</h1><br>
+    <div class="row">
+     <div class="col-xs-6 col-sm-4">
+        <img src="http://placehold.it/240x300" alt="" class="img-responsive">
+        <div class="caption">
+           <h3>Марат Тынарбеков</h3>
+            <h5>Проект Менеджер</h5>
+        </div>
+     </div>
+     <div class="col-xs-6 col-sm-4">
+        <img src="http://placehold.it/240x300" alt="" class="img-responsive">
+        <div class="caption">
+           <h3>Азамат Арстаналиев</h3>
+             <h5>Дизайнер</h5>
+        </div>
+     </div>
+     <div class="col-xs-6 col-sm-4">
+        <img src="http://placehold.it/240x300" alt="" class="img-responsive">
+        <div class="caption">
+           <h3>Омурбек Кадырбеков</h3>
+            <h5>Разработчик</h5>
+        </div>
+     </div>
 
-<br>
+     <div class="col-xs-6 col-sm-4">
+        <img src="http://placehold.it/240x300" alt="" class="img-responsive">
+        <div class="caption">
+          <h3>Дастан Тургунов</h3>
+          <h5>Разработчик</h5>
+        </div>
+     </div>
 
-<%= link_to 'New Portal Source', new_portal_source_path %>
+     <div class="col-xs-6 col-sm-4">
+        <img src="http://placehold.it/240x300" alt="" class="img-responsive">
+        <div class="caption">
+          <h3>Бекболот Разаков</h3>
+          <h5>Медиа специалист</h5>
+        </div>
+     </div>
+
+
+   </div>
+ </div>
+
+ <!--   end of our team  -->
+
+   <div class="row row-content">
+     <h3>О платформе</h3>
+
+     <div class="col-xs-10 col-sm-8 col-md-4 col-lg-5">
+
+       Почему нужны аудио новости? В мире, где информация везде окружает нас, сложно следовать за последними событиями которые происходят каждый день. Люди всегда заняты с чем то и обычно нет времени читать длинные новостные статьи.
+     Наша цель облегчить получения новостей с помощью конвертирования текстовых новостей в аудио файлы. У читателей будет возможность слушать новости где и когда угодно; то, что требуется это зайти на наш сайт, где будут все информационные агенста нашей страны, и вы можете прослушать интересующие новости.
+     AudioNews - это платформа для конвертации текстовых медиа материалов на аудио формат. Платформа помогает решить проблему новостных порталов. Спроектирована как Web-инструмент, с возможностью построения на iOS, Android-приложениях.
+     </div>
+     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 par-content"></div>
+     <div class="col-xs-10 col-sm-8 col-md-4 col-lg-5">
+       Преимущества платформы AudioNews:
+ Высокая скорость конвертации текстовых материалов большого размера на аудио формат;
+ Перспектива добавить библиотеку кыргызского языка и создать синтезатор в скором будущем;
+ Возможность добавить новые уникальные функции, как перевод с английкого языка на русский язык и обратный перевод с диктуемым текстом;
+     </div>
+  </div>
+</div>
+</div>

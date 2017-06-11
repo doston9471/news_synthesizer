@@ -8,6 +8,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 <script type="text/javascript" src="//download.yandex.ru/webspeechkit/webspeechkit-1.0.0.js"></script>
 <script type="text/javascript" src="//download.yandex.ru/webspeechkit/webspeechkit-settings.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>AudioNEWS</title>
+
+  <!-- Theme CSS -->
+  <link href="assets/style.css" rel="stylesheet">
 
   </head>
 
@@ -15,15 +25,15 @@
 
     <%= render 'layouts/navbar' %>
 
-    <div class="container">
+    <div class="container-fluid" style="margin-top:200px;">
       <%= yield %>
     </div>
 
-    <div class="jumbotron">
-       <div id="my_id" style="width: 200px"></div>
+    <div>
+      <% debug(params) %>
     </div>
 
-
+    <%= render 'layouts/footer' %>
 
   </body>
 </html>
