@@ -1,4 +1,4 @@
-class KloopScraper 
+class KloopScraper
 
 	@@instance = KloopScraper.new
 
@@ -12,7 +12,7 @@ class KloopScraper
 	end
 
 	def all_pages
-		@num_pages = 5
+		@num_pages = 2
 		@counter = 0
 		(1...@num_pages).each do |i|
 			page_num = i

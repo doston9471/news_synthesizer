@@ -10,18 +10,21 @@ class ArticlesController < ApplicationController
     keyword = params[:search]
     keyword = '*' if keyword==nil || keyword==''
     @articles = Article.search keyword,fields: [:headline,:textonly],page: params[:page], per_page: 10
-    #@articles = Article.paginate(:page => params[:page], :per_page => 10)
   end
 
   def kloop
     @articles=Article.where("portal_source_id=?", 1).paginate(:page => params[:page], :per_page => 10)
     render 'index'
+    save_audios
   end
 
   def vb
     @articles=Article.where("portal_source_id=?", 2).paginate(:page => params[:page], :per_page => 10)
+    save_audios
+    render 'index'
+  end
 
-
+  def save_audios
     @articles.each do |article|
 
       audiourl =article.audio
@@ -29,32 +32,29 @@ class ArticlesController < ApplicationController
 
       puts article.audiourl
       if article.audiourl==nil
+        begin
+          puts article.audiourl
+          puts "inside"
+          file_name = Time.now
+          filename ="#{file_name.to_i}.mp3"
+          save_path = Rails.root.join('public/audios', filename)
+          open(save_path, 'wb') do |file|
+            file << open(audiourl).read
+          end
 
-        puts article.audiourl
-        puts "inside"
+          article.audiourl='audios/'+filename
+          article.save
 
-        file_name = Time.now
-        filename ="#{file_name.to_i}.mp3"
-        save_path = Rails.root.join('public/audios', filename)
-        open(save_path, 'wb') do |file|
-          file << open(audiourl).read
-        end
-
-        article.audiourl='audios/'+filename
-        article.save
-        # article.attribute_update({audiourl: })
-
-        puts article.headline
-        puts filename
-        puts "SAVED"
+          puts article.headline
+          puts filename
+          puts "SAVED"
+          rescue
+            puts "FIle too large rescued"
+          end
 
       end
+   end
 
-    end
-
-
-
-    render 'index'
   end
 
   def knews

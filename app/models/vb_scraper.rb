@@ -15,15 +15,14 @@ class VbScraper
   def all_pages
     @num_pages = 2
     @counter=0
-    (1...@num_pages).each do |i|
-      page_num = i
-      puts page_num
-      puts "________________________________"
+    # (1...@num_pages).each do |i|
+      page_num = 1
+    #   puts page_num
+    #   puts "________________________________"
       url = "http://www.vb.kg/?sort_by=date&search=&page=#{page_num}"
-
       page_by_number(url) #if page_by_number(url)==false
 
-    end
+    # end
   end
 
   def page_by_number(url)
@@ -73,6 +72,10 @@ class VbScraper
           puts article
           @counter=@counter+1
           puts "SAVED #{@counter}"
+          if @counter > 8
+            return true
+          end
+
         else
           puts "Article Exists: #{article.headline}"
           return false

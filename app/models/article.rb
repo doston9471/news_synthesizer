@@ -8,8 +8,14 @@ class Article < ApplicationRecord
 
 
   def setup_yandex
-    
+
     if self.audio==nil
+
+      len = [self.textonly.length-2, 1000].min;
+      self.textonly = self.textonly[0..len]
+      puts self.textonly
+      puts self.textonly.length
+
       self.audio="https://tts.voicetech.yandex.net/generate?text="+self.textonly+
       "&format=mp3&lang=ru-RU&speaker=zahar&emotion=good&key=bc83ff34-e8a1-4e6d-8fe7-42ce3beca9f1"
       puts "audio URL"
