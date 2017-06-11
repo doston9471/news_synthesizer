@@ -1,3 +1,6 @@
+require 'net/http'
+require 'open-uri'
+
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
@@ -17,6 +20,33 @@ class ArticlesController < ApplicationController
 
   def vb
     @articles=Article.where("portal_source_id=?", 2).paginate(:page => params[:page], :per_page => 10)
+
+    audiourl =@articles.first.audio
+    audiourl =  URI.encode(audiourl)
+
+    @articles.each do |article|
+
+      puts article.audiourl
+
+      if article.audiourl==nil || article.audiourl.length<1
+        file_name = Time.now
+        filename ="#{file_name.to_i}.mp3"
+        save_path = Rails.root.join('public/audios', filename)
+        open(save_path, 'wb') do |file|
+          file << open(audiourl).read
+        end
+
+        article.audiourl='audios/'+filename
+        puts article.headline
+        puts filename
+        puts "SAVED"
+
+      end
+
+    end
+
+
+
     render 'index'
   end
 
@@ -87,6 +117,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:headline, :textonly, :date_published, :textorig, :portal_source_id)
+      params.require(:article).permit(:headline, :textonly, :date_published, :textorig, :portal_source_id, :audio)
     end
 end

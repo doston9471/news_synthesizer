@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170611045537) do
+ActiveRecord::Schema.define(version: 20170611080127) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "headline"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20170611045537) do
     t.string   "img"
     t.string   "origurl"
     t.string   "audio"
+    t.string   "audiourl"
     t.index ["portal_source_id"], name: "index_articles_on_portal_source_id"
   end
 

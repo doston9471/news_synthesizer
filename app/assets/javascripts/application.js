@@ -15,3 +15,25 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+//= require_self
+
+$( document ).ready(function() {
+
+
+  //  $(".audio-play").on("click", function() {
+  //    alert("u clicked");
+  //    var url= "https://tts.voicetech.yandex.net/generate?text="+""
+  //    +"&format=mp3&lang=ru-RU&speaker=zahar&emotion=good&key=bc83ff34-e8a1-4e6d-8fe7-42ce3beca9f1";
+  //     $(this).src=url;
+  //   });
+  //
+  // $( ".texter" ).click(function() {
+  //   var buttext = $(this).val();
+  //   var url= "https://tts.voicetech.yandex.net/generate?text="+buttext
+  //   +"&format=mp3&lang=ru-RU&speaker=zahar&emotion=good&key=bc83ff34-e8a1-4e6d-8fe7-42ce3beca9f1";
+  //   alert(buttext);
+  // });
+
+
+
+});

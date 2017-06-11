@@ -30,11 +30,24 @@
   <tbody>
     <% @articles.each do |article| %>
       <tr>
+        <td><%= article.audiourl %></td>
+
         <td><%= article.headline %></td>
         <td><%= article.textonly %></td>
         <td><%= article.date_published %></td>
-        
+
         <td><%= article.portal_source %></td>
+        <td><%= article.audio %></td>
+        <td>
+            <audio controls class="audio-play">
+              <% me =article.audio %>
+             <source class="audsrc" src="<%= article.audiourl %>" type="audio/mpeg">
+                <source src="<%= article.audiourl %>" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+
+        </td>
+
         <td><%= link_to 'Show', article %></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>
         <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -9,10 +9,15 @@ end
 #gem 'elasticksearch-rails'
 #gem 'elasticksearch-model'
 #
+gem 'magic_encoding'
 gem 'searchkick'
 gem 'will_paginate'
 gem 'nokogiri'
 gem 'will_paginate-bootstrap'
+
+gem 'activesupport'
+gem 'eventmachine'
+gem 'websocket-client-simple'
 
 gem 'yandex_speech_api'
 

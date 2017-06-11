@@ -6,6 +6,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<script type="text/javascript" src="//download.yandex.ru/webspeechkit/webspeechkit-1.0.0.js"></script>
+<script type="text/javascript" src="//download.yandex.ru/webspeechkit/webspeechkit-settings.js"></script>
+
   </head>
 
   <body>
@@ -15,6 +18,12 @@
     <div class="container">
       <%= yield %>
     </div>
+
+    <div class="jumbotron">
+       <div id="my_id" style="width: 200px"></div>
+    </div>
+
+
 
   </body>
 </html>
