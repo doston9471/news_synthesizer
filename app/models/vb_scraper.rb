@@ -21,7 +21,7 @@ class VbScraper
       puts "________________________________"
       url = "http://www.vb.kg/?sort_by=date&search=&page=#{page_num}"
 
-      page_by_number(url) if page_by_number(url)==true
+      page_by_number(url) #if page_by_number(url)==false
 
     end
   end
@@ -82,10 +82,10 @@ class VbScraper
    end
 
    def saved_or_not(article)
-     dbarticles = Article.where("headline=?", article.headline)
-     puts dbarticles
+     dbarticles = Article.where("headline=? and portal_source_id=?", article.headline, 2)
+     puts dbarticles.count
      puts "RESULT"
-     if dbarticles==nil
+     if dbarticles.count==0
        return true
      end
 

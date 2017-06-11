@@ -1,3 +1,5 @@
+require 'yandex_speech'
+
 class Yandex_Synthezator
 
   def initialize_yandex()
@@ -22,7 +24,7 @@ class Yandex_Synthezator
     filename ="#{file_name.to_i}"
 
     if !File.exists? file_dir
-      File.open(filename, "w+") do |file|
+      File.open(filename, "wb") do |file|
         @speaker.save_to_file text, filename
         puts "saved"
       end
