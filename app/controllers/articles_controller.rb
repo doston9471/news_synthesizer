@@ -14,8 +14,9 @@ class ArticlesController < ApplicationController
 
   def kloop
     @articles=Article.where("portal_source_id=?", 1).paginate(:page => params[:page], :per_page => 10)
-    render 'index'
     save_audios
+
+    render 'index'
   end
 
   def vb
@@ -23,6 +24,13 @@ class ArticlesController < ApplicationController
     save_audios
     render 'index'
   end
+
+  def knews
+    @articles=Article.where("portal_source_id=?", 3).paginate(:page => params[:page], :per_page => 10)
+    save_audios
+    render 'index'
+  end
+
 
   def save_audios
     @articles.each do |article|
@@ -57,10 +65,6 @@ class ArticlesController < ApplicationController
 
   end
 
-  def knews
-    @articles=Article.where("portal_source_id=?", 3).paginate(:page => params[:page], :per_page => 10)
-    render 'index'
-  end
 
   # GET /articles/1
   # GET /articles/1.json

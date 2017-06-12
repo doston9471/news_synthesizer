@@ -49,8 +49,11 @@
     <% end %>
   </div>
 
-  <%= link_to 'New Article', new_article_path %>
+  <div class="text-center">
+    <%= will_paginate @articles , renderer: BootstrapPagination::Rails%>
+    <%= link_to 'New Article', new_article_path %>
   </div>
-  <%= will_paginate @articles , renderer: BootstrapPagination::Rails%>
+
+</div>
 
 </div>

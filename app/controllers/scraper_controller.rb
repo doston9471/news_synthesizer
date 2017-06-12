@@ -9,19 +9,15 @@ class ScraperController < ApplicationController
   end
 
   def vb
-    #Scrapes all pages
     @scraper= VbScraper.instance.all_pages
-
   end
 
   def knews
-
+      @scraper= KnewsScraper.instance.all_pages
   end
 
   def set_yandex
-
     # @yandex_speech =  Yandex_Synthezator.new if @yandex_speech==nil
-
   end
 
 

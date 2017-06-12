@@ -2,7 +2,7 @@
 
   <div class="col-sm-4 csd-text">
 
-       <%= image_tag("everest.png", class: "logo", size: "150x90",  :alt => "University logo") %>
+       <%= image_tag("everestred.png", class: "logo", size: "150x90",  :alt => "University logo") %>
 
     </div>
     <div class="col-sm-6 csd-text">
@@ -18,23 +18,30 @@
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
-              <%= link_to "AudioNEWS",  root_path , class: "navbar-brand page-scroll" %>
+              <%= link_to "AudioNews",  root_path , class: "navbar-brand page-scroll" %>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <%= link_to "Kloop.kg",  kloop_path, class: "page-scroll" %>
+                  <%= link_to kloop_path, class: "image_links" do %>
+                    <%= image_tag("kloop.png", :alt => "like", size: "70x35") %>
+                  <% end %>
                 </li>
                 <li>
-                  <%= link_to "Knews.kg",  knews_path, class: "page-scroll" %>
+                  <%= link_to knews_path, class: "image_links" do %>
+                    <%= image_tag("knews2.png", class: "img img-responsive", size: "70x35") %>
+                  <% end %>
                 </li>
                 <li>
-                  <%= link_to "Vb.kg",  vb_path, class: "page-scroll" %>
+                  <%= link_to vb_path, class: "image_links" do %>
+                    <%= image_tag("vb.png", :alt => "like", size: "70x35") %>
+                  <% end %>
                 </li>
+
                   <li>
-                      <a class="page-scroll" href="#contact">О Платформе</a>
+                    <%= link_to "О Платформе",  root_path, class: "page-scroll" %>
                   </li>
               </ul>
           </div>

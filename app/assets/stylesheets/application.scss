@@ -17,12 +17,16 @@
  @import "bootstrap";
 
 #bs-example-navbar-collapse-1>ul>li{
-
 font-size: 16px;
-
 }
 
 #mycarousel{
   max-width: 1340px;
   max-height: 560px;
+}
+
+.image_links{
+  width: 70px!important;
+  height: 35px!important;
+  margin-right: 10px;
 }
